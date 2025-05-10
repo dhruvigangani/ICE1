@@ -16,5 +16,13 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val greetingTextView = findViewById<TextView>(R.id.greetingTextView)
+        val greetingButton = findViewById<Button>(R.id.greetingButton)
+        val name = editTextName.text.toString()
+        greetingButton.setOnClickListener {
+            greetingTextView.text = "Hello!"
+
+        }
+
     }
 }
